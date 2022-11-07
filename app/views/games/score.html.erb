@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-12 text-center">
-      <h1>Results <%= "🎉" if @result[:result] == 'win' %></h1>
+      <h1>Results<%= " 🎉" if @result[:result] == 'win' %></h1>
       <% if @result[:result] == 'win' %>
         <p>You win! <b><%= params[:word] %></b> is such a nice word 😊</p>
       <% elsif @result[:result] == 'fail' %>
