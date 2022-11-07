@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 text-center">
+      <h1>Results <%= "🎉" if @result[:result] == 'win' %></h1>
+      <% if @result[:result] == 'win' %>
+        <p>You win! <b><%= params[:word] %></b> is such a nice word 😊</p>
+      <% elsif @result[:result] == 'fail' %>
+        <p>You can't build <b><%= params[:word] %></b> from</p>
+        <p><b><%= params[:letters] %></b></p>
+      <% else %>
+        <p>Nice try, but <b><%= params[:word] %></b> can't be found in the dictionary 😖</p>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row pt-5">
+    <div class="col-12 text-center">
+      <p><%= link_to 'new round', new_path %></p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1>Let's play a game!</h1>
+      <ul id="letters">
+        <% @letters.each do |letter| %>
+          <li>
+            <div class="letterbox">
+              <%= letter[0].to_s %>
+            </div>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <form action="/score" method="post" data-turbo="false" class="d-flex">
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+        <%= hidden_field_tag :letters, @letters%>
+        <input type="text" class="form-control" name="word" placeholder="Write...">
+        <input type="submit" class="btn" value="Play">
+      </form>
+   </div>
+  </div>
+</div>
