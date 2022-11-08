@@ -19,7 +19,7 @@
       <form action="/score" method="post" data-turbo="false" class="d-flex">
         <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
         <%= hidden_field_tag :letters, @letters%>
-        <input type="text" class="form-control" name="word" placeholder="Write...">
+        <input id="form-input" type="text" class="form-control" name="word" placeholder="Write...">
         <input type="submit" class="btn" value="Play">
       </form>
    </div>
