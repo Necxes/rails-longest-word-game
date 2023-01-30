@@ -1,24 +1,28 @@
-# README
+# Longest-word game app
+You are given a random set of letters.
+You have to enter the longest english word you can find using only letters in the grid.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Getting Started
+## Setup
+### Install gems
 
-Things you may want to cover:
+`bundle install`
 
-* Ruby version
+Install JS packages
 
-* System dependencies
+`yarn install`
 
-* Configuration
+Run a server
 
-* Database creation
+`rails s`
 
-* Database initialization
 
-* How to run the test suite
+# Built With
+Rails 7 - Backend / Front-end
+Stimulus JS - Front-end JS
 
-* Services (job queues, cache servers, search engines, etc.)
+# Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-* Deployment instructions
-
-* ...
+# License
+This project is licensed under the MIT License
